@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/02d4831be3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/tailwind.css">
+    <title>ShoeShoe</title>
+
+</head>
+<body>
+    
+
+
+
+
+    <nav class="py-7 px-9 text-white" id="navigation">
+    
+        <div class="flex justify-between">
+    
+                <div class="icon" id="menu-button">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+    
+                <div class="icon" id="exit-button">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+    
+            <h1 class="text-bold text-2xl cursor-default">ShoeShoe</h1>
+    
+                <ul class="flex items-center" id="menu-links">
+                    <li><a href="index.html" class="mr-12 text-bold text-2xl">Home</a></li>
+                    <li><a href="product.html" class="mr-12 text-bold text-2xl">Product</a></li>
+                    <li><a href="about.html" class="mr-12 text-bold text-2xl">About</a></li>
+                    <li><a href="contact.html" class="mr-12 text-bold text-2xl">Contact</a></li>
+                </ul>
+        
+                <div class="md:flex md:items-center" id="cart">
+                    <i class="fa-solid fa-cart-shopping cursor-pointer"></i>
+                    <span class="cartNumber" id="addCart">0</span>
+                </div>
+    
+        </div>
+    
+    </nav>
+
+
+
+
+
+<section class="py-20 bg-white flex items-center justify-center min-h-screen">
+
+<div class="bg-gray-200 shadow-2xl max-w-3xl p-5 flex flex-wrap  rounded-2xl" id="sign-form">
+
+        <div class="md:w-1/2 text-center" id="signForm">
+            <h2 class="font-bold text-2xl text-red-600">Sign Up</h2>
+            <p class="mt-2 text-sm">Sign up to access easily</p>
+            <form action="" class="mt-5 flex flex-col p-4">
+                <input type="text" placeholder="Name" class="px-3 py-2 mb-3 rounded-xl outline-none">
+                <input type="email" placeholder="Email" class="px-3 py-2 mb-3 rounded-xl outline-none">
+                <input type="password" placeholder="Password" class="px-3 py-2 mb-3 rounded-xl outline-none">
+                <button class="px-3 py-2 rounded-lg font-bold border-solid border-2 border-red-600 hover:bg-red-600 hover:text-white">Sign Up</button>
+            </form>
+            <div class="m-5">
+                <h3 class="font-bold my-3">Sign up with:</h3>
+                <i class="fa-brands fa-facebook bg-blue-600 text-white text-lg px-2 py-1 rounded-full cursor-pointer"></i>
+                <i class="fa-brands fa-google bg-white text-red-600 text-lg px-2 py-1 rounded-full cursor-pointer"></i>
+            </div>
+        </div>
+
+        <div class="md:w-1/2" id="sign-image">
+            <img src="asset-logo/signform.jpg" alt="" class="rounded-2xl" id="sign-image">
+        </div>
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="py-20" id="footer">
+
+    <div class="flex items-center justify-around flex-wrap p-5">
+
+        <div class="flex flex-col">
+            <h1 class="text-red-600 font-bold text-2xl">Quick Links</h1>
+
+            <div class="flex flex-col">
+                <a href="index.html" class="text-white text-bold text-2xl m-0 ">Home</a>
+                <a href="product.html" class="text-white text-bold text-2xl m-0">Product</a>
+                <a href="about.html" class="text-white text-bold text-2xl m-0">About</a>
+                <a href="contact" class="text-white text-bold text-2xl m-0">Contact</a>
+            </div>
+
+        </div>
+
+
+            <div class="social">
+                <h1 class="text-red-600 font-bold text-2xl">Social Media</h1>
+                <div>
+                    <p class="text-white font-bold flex items-center"> <i class="text-2xl mr-2 text-blue-600 fa-brands fa-facebook"></i>Facebook</p>
+                    <p class="text-white font-bold flex items-center"><i class="text-2xl text-pink-500 mr-2 fa-brands fa-instagram"></i>Instagram</p>
+                    <p class="text-white font-bold flex items-center"><i class="text-2xl text-blue-600 mr-2 fa-brands fa-twitter"></i>Twitter</p>
+                    <p class="text-white font-bold flex items-center"> <i class="text-2xl text-red-500 hite mr-2 fa-brands fa-youtube"></i>Youtube</p>
+                </div>
+            </div>
+
+        <div class="form flex flex-col items-center justify-center">
+            <h1 class="text-red-600 font-bold text-2xl">Sign up and Save</h1>
+            <p class="text-white">Lorem ipsum dolor sit amet.</p>
+
+            <form action="" class="bg-red-600 rounded-md">
+                <input type="email" placeholder="Email" class="bg-transparent text-white px-2 py-1 outline-none border-none">
+                <button class="text-white font-bold outline-none py-0.5 px-2 text-center">Subscribe</button>
+            </form>
+        </div>
+
+    </div>
+
+
+    <div class="mt-16">
+        <div class="flex items-center justify-center">
+            <img class="w-14" src="asset-logo/visa.png" alt="">
+            <img class="w-14" src="asset-logo/mastercard.png" alt="">
+            <img class="w-10 h-9" src="asset-logo/gcash.png" alt="">
+            <img class="w-14" src="asset-logo/cod.png" alt="">
+        </div>
+        <h1 class="text-center text-white">Payment Method</h1>
+    </div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

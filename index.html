@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/02d4831be3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/tailwind.css">
+    <title>ShoeShoe</title>
+
+</head>
+<body>
+    
+
+
+
+
+    <nav class="py-7 px-9 text-white" id="navigation">
+    
+        <div class="flex justify-between">
+    
+                <div class="icon" id="menu-button">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+    
+                <div class="icon" id="exit-button">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+
+    
+            <h1 class="text-bold text-2xl cursor-default">ShoeShoe</h1>
+    
+                <ul class="flex items-center" id="menu-links">
+                    <li><a href="index.html" class="mr-12 text-bold text-2xl">Home</a></li>
+                    <li><a href="product.html" class="mr-12 text-bold text-2xl">Product</a></li>
+                    <li><a href="about.html" class="mr-12 text-bold text-2xl">About</a></li>
+                    <li><a href="contact.html" class="mr-12 text-bold text-2xl">Contact</a></li>
+                </ul>
+        
+                <div class="md:flex md:items-center" id="cart">
+                    <i class="fa-solid fa-cart-shopping cursor-pointer"></i>
+                    <span class="cartNumber">0</span>
+                </div>
+    
+        </div>
+    
+    </nav>
+
+    <section class="pb-60">
+
+        <div class="flex items-center justify-evenly pt-36 mx-12" id="home-section">
+
+            <div class="text-white" id="home-content">
+                <h1 class="text-5xl mb-10">Bring <span class="text-red-500 font-bold">power</span> to <br>
+                    your <span class="text-red-500 font-bold">steps</span>.</h1>
+                <p class="text-lg mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, beatae? <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <a href="signin.html" class="px-4 py-2 border-solid border-2 border-red-500 rounded-lg hover:bg-red-500 font-bold">Sign up</a>
+                <a href="" class="px-4 py-2 border-solid border-2 border-red-500 rounded-lg hover:bg-red-500 font-bold">Log in</a>
+
+            </div>
+
+            <img src="asset/home-image.png" alt="" id="home-image">
+
+        </div>
+
+    </section>
+
+
+
+<section class="bg-white py-56 px-4 ">
+
+    <h1 class="text-center text-5xl mb-28 letter tracking-widest text-red-600 font-bold">Shop Gallery</h1>
+
+    <div class="flex flex-wrap justify-center" id="gallery-section">
+
+        <div class="flex flex-wrap  justify-center" id="gallery-image">
+            <img src="asset/gallery1.jpg" alt="" class="max-w-sm m-6 ease-in-out duration-300">
+            <img src="asset/gallery2.webp" alt="" class="max-w-sm m-6 ease-in-out duration-300">
+            <img src="asset/gallery3.jpg" alt="" class="max-w-sm m-6 ease-in-out duration-300">
+            <img src="asset/gallery4.jpg" alt="" class="max-w-sm m-6 ease-in-out duration-300">
+        </div>
+
+
+    </div>
+
+
+
+</section>
+
+
+
+<section class="bg-white">
+
+    <div class="flex flex-wrap items-center justify-around pb-32 px-10">
+
+        <div class="flex items-center justify-center flex-col m-6 text-center" id="promo-content" >
+            <img src="asset-logo/sale.avif" alt="" class="max-h-96 rounded-xl">
+        </div>
+
+        <div class="flex items-center justify-center flex-col m-6 text-center" id="promo-content">
+            <img src="asset-logo/orignal.avif" alt="" class="max-h-96 rounded-xl">
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="bg-white py-32">
+    
+
+
+
+        <div class="flex flex-wrap items-center justify-center" id="button-group">
+            <button class="px-4 py-2 border-solid border-2 border-red-500 rounded-lg hover:bg-red-500 hover:text-white font-bold md:mr-10 mb-5 ease-in-out duration-300   active list" data-filter="all" >All</button>
+            <button class="px-4 py-2 border-solid border-2 border-red-500 rounded-lg hover:bg-red-500 hover:text-white font-bold md:mr-10 mb-5 ease-in-out duration-300 list" data-filter="bestseller" >Best Seller</button>
+            <button class="px-4 py-2 border-solid border-2 border-red-500 rounded-lg hover:bg-red-500 hover:text-white font-bold md:mr-10 mb-5 ease-in-out duration-300 list" data-filter="newarrival" >New Arrival</button>
+            <a href="product.html" class="px-4 py-2 border-solid border-2 border-red-500 rounded-lg hover:bg-red-500 hover:text-white font-bold md:mr-10 mb-5">More Product</a>
+        </div>
+    
+        <h1 class="product-info text-center mt-5 font-bold text-3xl text-red-600 tracking-widest ease-in-out duration-300"></h1>
+
+        <div class="flex flex-wrap items-center justify-center product-section mt-12">
+
+    
+            <div class="bg-red-600 max-w-xs shadow-lg shadow-black m-5 item rounded-xl" data-item="bestseller">
+                <img src="asset/lebron-witness.jpg" alt="" class="rounded-t-xl w-full object-cover h-56">
+                    <div class="text-center p-7 text-white font-bold">
+                        <i class="fa-solid fa-star text-yellow-300"></i>
+                        <i class="fa-solid fa-star text-yellow-300"></i>
+                        <i class="fa-solid fa-star text-yellow-300"></i>
+                        <i class="fa-solid fa-star text-yellow-300"></i>
+                        <i class="fa-regular fa-star text-yellow-300"></i>
+                        <h1 class="text-xl">LeBron Witness 7</h1>
+                        <p class="text-sm mb-2">Men's Shoes</p>
+                        <p class="text-xl">₱5,295</p>
+                        <div class="mt-2 flex items-center justify-center">
+                            <p class="mr-2">Size :</p>
+                            <form action="" class="formChoice">
+                                <p><input type="radio" name="size" id="size-39"><label for="size-39" class="circle">39</label></p>
+                                <p><input type="radio" name="size" id="size-40"><label for="size-40" class="circle">40</label></p>
+                                <p><input type="radio" name="size" id="size-41"><label for="size-41" class="circle">41</label></p>
+                            </form>
+                        </div>
+                        <div class="mt-5" id="button">
+                            <button class=" px-4 py-2 border-solid border-2 border-white rounded-lg hover:bg-white hover:text-black font-bold ease-in-out duration-300 add">Add to Cart</button>
+                            <button class="px-4 py-2 border-solid border-2 border-white rounded-lg hover:bg-white hover:text-black font-bold ease-in-out duration-300">Buy</button>
+                        </div>
+                    </div>
+            </div>
+    
+            <div class="bg-red-600 max-w-xs m-5 shadow-lg shadow-black item rounded-xl" data-item="newarrival">
+                <img src="asset/nike-airmax.webp" alt="" class=" rounded-t-xl w-full object-cover h-56">
+                    <div class="text-center p-7 text-white font-bold">
+                        <i class="fa-solid fa-star text-yellow-300"></i>
+                        <i class="fa-solid fa-star text-yellow-300"></i>
+                        <i class="fa-solid fa-star text-yellow-300"></i>
+                        <i class="fa-solid fa-star text-yellow-300"></i>
+                        <i class="fa-regular fa-star text-yellow-300"></i>
+                        <h1 class="text-xl">Nike Air Max SYSTM</h1>
+                        <p class="text-sm mb-2">Women's Shoes</p>
+                        <p class="text-xl">₱5,095</p>
+                        <div class="mt-2 flex items-center justify-center">
+                            <p class="mr-2">Size :</p>
+                            <form action="" class="formChoice">
+                                <p><input type="radio" name="size" id="size2-39"><label for="size2-39" class="circle">39</label></p>
+                                <p><input type="radio" name="size" id="size2-40"><label for="size2-40" class="circle">40</label></p>
+                                <p><input type="radio" name="size" id="size2-41"><label for="size2-41" class="circle">41</label></p>
+                            </form>
+                        </div>
+                        <div class="mt-5" id="button">
+                            <button class="px-4 py-2 border-solid border-2 border-white rounded-lg hover:bg-white hover:text-black font-bold ease-in-out duration-300 add">Add to Cart</button>
+                            <button class="px-4 py-2 border-solid border-2 border-white rounded-lg hover:bg-white hover:text-black font-bold ease-in-out duration-300">Buy</button>
+                        </div>
+                    </div>
+            </div>
+
+                
+            <div class="bg-red-600 max-w-xs m-5 shadow-lg shadow-black item rounded-xl" data-item="newarrival">
+                <img src="asset/oldskool.webp" alt="" class=" rounded-t-xl w-full object-cover h-56">
+                    <div class="text-center p-7 text-white font-bold">
+                        <i class="fa-solid fa-star text-yellow-300"></i>
+                        <i class="fa-solid fa-star text-yellow-300"></i>
+                        <i class="fa-solid fa-star text-yellow-300"></i>
+                        <i class="fa-solid fa-star text-yellow-300"></i>
+                        <i class="fa-regular fa-star text-yellow-300"></i>
+                        <h1 class="text-xl">Old Skool</h1>
+                        <p class="text-sm mb-2">Women's Shoes</p>
+                        <p class="text-xl">₱3,897</p>
+                        <div class="mt-2 flex items-center justify-center">
+                            <p class="mr-2">Size :</p>
+                            <form action="" class="formChoice">
+                                <p><input type="radio" name="size" id="size3-39"><label for="size3-39" class="circle">39</label></p>
+                                <p><input type="radio" name="size" id="size3-40"><label for="size3-40" class="circle">40</label></p>
+                                <p><input type="radio" name="size" id="size3-41"><label for="size3-41" class="circle">41</label></p>
+                            </form>
+                        </div>
+                        <div class="mt-5" id="button">
+                            <button class="px-4 py-2 border-solid border-2 border-white rounded-lg hover:bg-white hover:text-black font-bold ease-in-out duration-300 add">Add to Cart</button>
+                            <button class="px-4 py-2 border-solid border-2 border-white rounded-lg hover:bg-white hover:text-black font-bold ease-in-out duration-300">Buy</button>
+                        </div>
+                    </div>
+            </div>
+    
+            <div class="bg-red-600 max-w-xs m-5 shadow-lg shadow-black item rounded-xl" data-item="bestseller">
+                <img src="asset/airjoran1mid.webp" alt="" class=" rounded-t-xl w-full object-cover h-56">
+                    <div class="text-center p-7 text-white font-bold">
+                        <i class="fa-solid fa-star text-yellow-300"></i>
+                        <i class="fa-solid fa-star text-yellow-300"></i>
+                        <i class="fa-solid fa-star text-yellow-300"></i>
+                        <i class="fa-solid fa-star text-yellow-300"></i>
+                        <i class="fa-regular fa-star text-yellow-300"></i>
+                        <h1 class="text-xl">Air Jordan 1 mid</h1>
+                        <p class="text-sm mb-2">Women's Shoes</p>
+                        <p class="text-xl">₱7,095</p>
+                        <div class="mt-2 flex items-center justify-center">
+                            <p class="mr-2">Size :</p>
+                            <form action="" class="formChoice">
+                                <p><input type="radio" name="size" id="size4-39"><label for="size4-39" class="circle">39</label></p>
+                                <p><input type="radio" name="size" id="size4-40"><label for="size4-40" class="circle">40</label></p>
+                                <p><input type="radio" name="size" id="size4-41"><label for="size4-41" class="circle">41</label></p>
+                            </form>
+                        </div>
+                        <div class="mt-5" id="button">
+                            <button class="px-4 py-2 border-solid border-2 border-white rounded-lg hover:bg-white hover:text-black font-bold ease-in-out duration-300 add">Add to Cart</button>
+                            <button class="px-4 py-2 border-solid border-2 border-white rounded-lg hover:bg-white hover:text-black font-bold ease-in-out duration-300">Buy</button>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="bg-red-600 max-w-xs shadow-lg shadow-black m-5 item rounded-xl" data-item="bestseller">
+                <img src="asset/campus00s-men.webp" alt="" class="rounded-t-xl w-full object-cover h-56">
+                    <div class="text-center p-7 text-white font-bold">
+                        <i class="fa-solid fa-star text-yellow-300"></i>
+                        <i class="fa-solid fa-star text-yellow-300"></i>
+                        <i class="fa-solid fa-star text-yellow-300"></i>
+                        <i class="fa-solid fa-star text-yellow-300"></i>
+                        <i class="fa-regular fa-star text-yellow-300"></i>
+                        <h1 class="text-xl">Campus 00s</h1>
+                        <p class="text-sm mb-2">Men's Shoes</p>
+                        <p class="text-xl">₱5,000</p>
+                        <div class="mt-2 flex items-center justify-center">
+                            <p class="mr-2">Size :</p>
+                            <form action="" class="formChoice">
+                                <p><input type="radio" name="size" id="size5-39"><label for="size5-39" class="circle">39</label></p>
+                                <p><input type="radio" name="size" id="size5-40"><label for="size5-40" class="circle">40</label></p>
+                                <p><input type="radio" name="size" id="size5-41"><label for="size5-41" class="circle">41</label></p>
+                            </form>
+                        </div>
+                        <div class="mt-5" id="button">
+                            <button class="px-4 py-2 border-solid border-2 border-white rounded-lg hover:bg-white hover:text-black font-bold ease-in-out duration-300 add">Add to Cart</button>
+                            <button class="px-4 py-2 border-solid border-2 border-white rounded-lg hover:bg-white hover:text-black font-bold ease-in-out duration-300">Buy</button>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="bg-red-600 max-w-xs m-5 shadow-lg shadow-black item rounded-xl" data-item="newarrival">
+                <img src="asset/chuck-70.jpg" alt="" class=" rounded-t-xl w-full object-cover h-56">
+                    <div class="text-center p-7 text-white font-bold">
+                        <i class="fa-solid fa-star text-yellow-300"></i>
+                        <i class="fa-solid fa-star text-yellow-300"></i>
+                        <i class="fa-solid fa-star text-yellow-300"></i>
+                        <i class="fa-solid fa-star text-yellow-300"></i>
+                        <i class="fa-regular fa-star text-yellow-300"></i>
+                        <h1 class="text-xl">Converse Chuck 70</h1>
+                        <p class="text-sm mb-2">Unisex</p>
+                        <p class="text-xl">₱4,290</p>
+                        <div class="mt-2 flex items-center justify-center">
+                            <p class="mr-2">Size :</p>
+                            <form action="" class="formChoice">
+                                <p><input type="radio" name="size" id="size6-39"><label for="size6-39" class="circle">39</label></p>
+                                <p><input type="radio" name="size" id="size6-40"><label for="size6-40" class="circle">40</label></p>
+                                <p><input type="radio" name="size" id="size6-41"><label for="size6-41" class="circle">41</label></p>
+                            </form>
+                        </div>
+                        <div class="mt-5" id="button">
+                            <button class="px-4 py-2 border-solid border-2 border-white rounded-lg hover:bg-white hover:text-black font-bold ease-in-out duration-300 add">Add to Cart</button>
+                            <button class="px-4 py-2 border-solid border-2 border-white rounded-lg hover:bg-white hover:text-black font-bold ease-in-out duration-300">Buy</button>
+                        </div>
+                    </div>
+            </div>
+    
+            <div class="bg-red-600 max-w-xs shadow-lg shadow-black m-5 item rounded-xl" data-item="bestseller">
+                <img src="asset/blisstrainer-women.webp" alt="" class="rounded-t-xl w-full object-cover h-56">
+                    <div class="text-center p-7 text-white font-bold">
+                        <i class="fa-solid fa-star text-yellow-300"></i>
+                        <i class="fa-solid fa-star text-yellow-300"></i>
+                        <i class="fa-solid fa-star text-yellow-300"></i>
+                        <i class="fa-solid fa-star text-yellow-300"></i>
+                        <i class="fa-regular fa-star text-yellow-300"></i>
+                        <h1 class="text-xl">Bliss Trainer</h1>
+                        <p class="text-sm mb-2">Women's Shoes</p>
+                        <p class="text-xl">₱2,299</p>
+                        <div class="mt-2 flex items-center justify-center">
+                            <p class="mr-2">Size :</p>
+                            <form action="" class="formChoice">
+                                <p><input type="radio" name="size" id="size7-39"><label for="size7-39" class="circle">39</label></p>
+                                <p><input type="radio" name="size" id="size7-40"><label for="size7-40" class="circle">40</label></p>
+                                <p><input type="radio" name="size" id="size7-41"><label for="size7-41" class="circle">41</label></p>
+                            </form>
+                        </div>
+                        <div class="mt-5" id="button">
+                            <button class="px-4 py-2 border-solid border-2 border-white rounded-lg hover:bg-white hover:text-black font-bold ease-in-out duration-300 add">Add to Cart</button>
+                            <button class="px-4 py-2 border-solid border-2 border-white rounded-lg hover:bg-white hover:text-black font-bold ease-in-out duration-300">Buy</button>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="bg-red-600 max-w-xs m-5 shadow-lg shadow-black item rounded-xl" data-item="newarrival">
+                <img src="asset/sudeclasssic.webp" alt="" class=" rounded-t-xl w-full object-cover h-56">
+                    <div class="text-center p-7 text-white font-bold">
+                        <i class="fa-solid fa-star text-yellow-300"></i>
+                        <i class="fa-solid fa-star text-yellow-300"></i>
+                        <i class="fa-solid fa-star text-yellow-300"></i>
+                        <i class="fa-solid fa-star text-yellow-300"></i>
+                        <i class="fa-regular fa-star text-yellow-300"></i>
+                        <h1 class="text-xl">Suede Classic XXI</h1>
+                        <p class="text-sm mb-2">Men's Shoes</p>
+                        <p class="text-xl">₱4,250</p>
+                        <div class="mt-2 flex items-center justify-center">
+                            <p class="mr-2">Size :</p>
+                            <form action="" class="formChoice">
+                                <p><input type="radio" name="size" id="size8-39"><label for="size8-39" class="circle">39</label></p>
+                                <p><input type="radio" name="size" id="size8-40"><label for="size8-40" class="circle">40</label></p>
+                                <p><input type="radio" name="size" id="size8-41"><label for="size8-41" class="circle">41</label></p>
+                            </form>
+                        </div>
+                        <div class="mt-5" id="button">
+                            <button class="px-4 py-2 border-solid border-2 border-white rounded-lg hover:bg-white hover:text-black font-bold ease-in-out duration-300 add">Add to Cart</button>
+                            <button class="px-4 py-2 border-solid border-2 border-white rounded-lg hover:bg-white hover:text-black font-bold ease-in-out duration-300">Buy</button>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="bg-red-600 max-w-xs m-5 shadow-lg shadow-black item rounded-xl" data-item="newarrival">
+                <img src="asset/freshfoam.webp" alt="" class=" rounded-t-xl w-full object-cover h-56">
+                    <div class="text-center p-7 text-white font-bold">
+                        <i class="fa-solid fa-star text-yellow-300"></i>
+                        <i class="fa-solid fa-star text-yellow-300"></i>
+                        <i class="fa-solid fa-star text-yellow-300"></i>
+                        <i class="fa-solid fa-star text-yellow-300"></i>
+                        <i class="fa-regular fa-star text-yellow-300"></i>
+                        <h1 class="text-xl">Fresh Foam X</h1>
+                        <p class="text-sm mb-2">Men's Shoes</p>
+                        <p class="text-xl">₱7,739</p>
+                        <div class="mt-2 flex items-center justify-center">
+                            <p class="mr-2">Size :</p>
+                            <form action="" class="formChoice">
+                                <p><input type="radio" name="size" id="size9-39"><label for="size9-39" class="circle">39</label></p>
+                                <p><input type="radio" name="size" id="size9-40"><label for="size9-40" class="circle">40</label></p>
+                                <p><input type="radio" name="size" id="size9-41"><label for="size9-41" class="circle">41</label></p>
+                            </form>
+                        </div>
+                        <div class="mt-5" id="button">
+                            <button class="px-4 py-2 border-solid border-2 border-white rounded-lg hover:bg-white hover:text-black font-bold ease-in-out duration-300 add">Add to Cart</button>
+                            <button class="px-4 py-2 border-solid border-2 border-white rounded-lg hover:bg-white hover:text-black font-bold ease-in-out duration-300">Buy</button>
+                        </div>
+                    </div>
+            </div>
+
+
+    </div>
+
+    
+
+</section>
+
+
+
+<section class="bg-white py-32">
+
+    <div class="flex flex-wrap items-center justify-center">
+        <img src="asset-logo/adidas-logo.png" alt="" class="w-20 m-10">
+        <img src="asset-logo/Converse-Logo.png" alt="" class="w-20 m-10">
+        <img src="asset-logo/new-balance.png" alt="" class="w-20 m-10">
+        <img src="asset-logo/nike-logo.png" alt="" class="w-20 m-10">
+        <img src="asset-logo/PUMA-logo.png" alt="" class="w-20 m-10">
+        <img src="asset-logo/vans-logo.png" alt="" class="w-20 m-10">
+        <img src="asset-logo/wb-logo.png" alt="" class="w-20 m-10">
+    </div>
+
+</section>
+
+
+<section class="bg-white py-32">
+
+    <div class="text-center px-10">
+        <h1 class="font-bold text-3xl mb-10 text-red-600">Shoeshoe store is the best and legit shop for a legit shoes</h1>
+        <p class="m-auto max-w-md text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, cupiditate!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, nobis?
+        </p>
+    </div>
+
+
+</section>
+
+
+<section class="py-20" id="footer">
+
+    <div class="flex items-center justify-around flex-wrap p-5">
+
+        <div class="flex flex-col">
+            <h1 class="text-red-600 font-bold text-2xl">Quick Links</h1>
+
+            <div class="flex flex-col">
+                <a href="index.html" class="text-white text-bold text-2xl m-0 ">Home</a>
+                <a href="product.html" class="text-white text-bold text-2xl m-0">Product</a>
+                <a href="about.html" class="text-white text-bold text-2xl m-0">About</a>
+                <a href="contact" class="text-white text-bold text-2xl m-0">Contact</a>
+            </div>
+
+        </div>
+
+
+            <div class="social">
+                <h1 class="text-red-600 font-bold text-2xl">Social Media</h1>
+                <div>
+                    <p class="text-white font-bold flex items-center"> <i class="text-2xl mr-2 text-blue-600 fa-brands fa-facebook"></i>Facebook</p>
+                    <p class="text-white font-bold flex items-center"><i class="text-2xl text-pink-500 mr-2 fa-brands fa-instagram"></i>Instagram</p>
+                    <p class="text-white font-bold flex items-center"><i class="text-2xl text-blue-600 mr-2 fa-brands fa-twitter"></i>Twitter</p>
+                    <p class="text-white font-bold flex items-center"> <i class="text-2xl text-red-500 hite mr-2 fa-brands fa-youtube"></i>Youtube</p>
+                </div>
+            </div>
+
+        <div class="form flex flex-col items-center justify-center">
+            <h1 class="text-red-600 font-bold text-2xl">Sign up and Save</h1>
+            <p class="text-white">Lorem ipsum dolor sit amet.</p>
+
+            <form action="" class="bg-red-600 rounded-md">
+                <input type="email" placeholder="Email" class="bg-transparent text-white px-2 py-1 outline-none border-none">
+                <button class="text-white font-bold outline-none py-0.5 px-2 text-center">Subscribe</button>
+            </form>
+        </div>
+
+    </div>
+
+
+    <div class="mt-16">
+        <div class="flex items-center justify-center">
+            <img class="w-14" src="asset-logo/visa.png" alt="">
+            <img class="w-14" src="asset-logo/mastercard.png" alt="">
+            <img class="w-10 h-9" src="asset-logo/gcash.png" alt="">
+            <img class="w-14" src="asset-logo/cod.png" alt="">
+        </div>
+        <h1 class="text-center text-white">Payment Method</h1>
+    </div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+
+* {
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    background: #111111;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.icon {
+    font-size: 25px;
+    display: none;
+}
+
+#home-image {
+    filter: drop-shadow(0 0 0.75rem #fff);
+    animation: zoom 2s infinite alternate;
+}
+
+.sticky {
+    position: fixed;
+    background: #111111;
+    width: 100%;
+    z-index: 9999;
+}
+
+#gallery-image img:hover {
+    transform: scale(1.1);
+    border-radius: 30px;
+    box-shadow: 0 0 15px #111111;
+}
+
+.active {
+    background: #E53935;
+    color: #fff;
+}
+
+
+
+.item.hide{
+    display: none;
+}
+
+#footer{
+    background: #111111;
+}
+
+@keyframes zoom {
+    from {transform: scale(1.1)}
+    to {trannsform: scale(1)}
+}
+
+
+
+.formChoice {
+    display: flex;
+    margin-top: .5em;
+}
+
+.formChoice p {
+    position: relative;
+    margin: 0 .5em .5em ;
+}
+
+.circle {
+    position: static;
+    display: block;
+    z-index: 1;
+    top: 0;
+    margin: 0;
+    cursor: pointer;
+    border: 2px solid #f1f1f1;
+    border-radius: 50%;
+    padding: 1px 5px;
+    color: #f1f1f1;
+}
+
+.circle:hover{
+    background: #f1f1f1;
+    color: #111111;
+}
+
+.formChoice p input {
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+    position: absolute;
+    height: 0;
+    width: 0;
+    
+}
+
+.formChoice p input:checked + label {
+    background: #f1f1f1;
+    color: #111111;
+
+}
+
+#promo-content {
+    filter: drop-shadow(0 0 0.75rem #111);
+}
+
+.fa-cart-shopping {
+    font-size: 27px;
+}
+
+.cartNumber {
+    background: #E53935;
+    padding: 1px 6px;
+    border-radius: 50%;
+    color: #f1f1f1;
+    position: absolute;
+    top: 18px;
+    right: 23px;
+}
+
+
+
+@media only screen and (max-width: 767px) and (min-width: 300px) {
+
+    .icon {
+        display: block;
+    }
+
+    #menu-links {
+        display: block;
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 30vh;
+        max-width: 100%;
+        background: #E53935;
+        text-align: left;
+        padding: 40px;
+        transition: all .50s ease-in-out;
+    }
+
+    #menu-links li {
+        margin-bottom: 10px;
+    }
+
+    #menu-links.show {
+        top: 80px;
+    }
+
+
+    #exit-button{
+        display: none;
+    }
+
+    #menu-button.conceal {
+        display: none;
+    }
+
+    #exit-button.appear{
+        display: block;
+    }
+
+    #home-section {
+        display: block;
+        text-align: center;
+        padding: 150px 30px;
+    }
+
+    #home-section h1 {
+        font-size: 50px;
+    }
+
+    #home-section p{
+        font-size: 18px;
+    }
+
+
+
+    #home-section img {
+        margin: auto;
+        width: 500px;
+    }
+
+
+    #gallery-image img{
+        width: 250px;
+        
+    }
+
+
+    #brand {
+        margin-top: 100px;
+    }
+
+    #button-group {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #button-group button, a {
+        margin: 15px;
+    }
+
+
+    .item, img {
+        width: 16rem;
+    }
+
+
+    #button button {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    #promo-content {
+        padding: 15px;
+    }
+    #promo-content h1 {
+        font-size: 30px;
+    }
+
+    #home-content a {
+        display: block;
+    }
+
+    .form {
+        margin-top: 30px;
+    }
+
+    .form form input {
+        width: 162px;
+    }
+
+    .formChoice {
+    display: flex;
+    margin-top: .5em;
+}
+
+#form-contact input {
+    width:100%;
+    margin-bottom: 10px;
+}
+
+
+.cartNumber {
+    top: 15px;
+    right: 25px;
+}
+
+
+#signForm {
+    width: 100%;
+}
+
+#sign-image  {
+    display: block;
+    margin: auto;
+}
+
+
+}
